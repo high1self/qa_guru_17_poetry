@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "qa-guru-17-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Kirill Kozhevnikov <k.kozhevnikov@likebz.ru>"]
+readme = "README.md"
+packages = [{include = "qa_guru_17_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selene = {version = "^2.0.0b17", allow-prereleases = true}
+pytest = "^7.2.2"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
